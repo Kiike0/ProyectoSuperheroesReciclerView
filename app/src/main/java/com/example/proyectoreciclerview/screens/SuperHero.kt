@@ -128,7 +128,7 @@ Unit) {
 @Composable
 fun SuperHeroViewDuplicate() {
     val context = LocalContext.current
-    LazyVerticalGrid(GridCells.Fixed(2),
+    LazyVerticalGrid(GridCells.Adaptive(130.dp),
         contentPadding = PaddingValues(horizontal = 4.dp, vertical = 4.dp),
         content = {
         items(getSuperheroes()) { superhero ->
